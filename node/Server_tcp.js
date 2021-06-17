@@ -34,4 +34,4 @@ function writeData(socket, data){
     })(socket, data);
     }
 }
-console.log("서버 켜짐")
+console.log("server on")
