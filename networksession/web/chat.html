@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socketio chat</title>
+    <script src="http://127.0.0.1/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <textarea rows="20" cols="30" id="chat"></textarea><br />
+    <input type="text" id="user" /><input
+      type="button"
+      value="msg submit"
+      onclick="myOnClick()"
+    />
+  </body>
+  <script>
+    var socket = io.connect("http://127.0.0.1");
+    socket.emit("joinRoom", { roomName: "myroom" });
+    socket.on("recMsg", function (data) {
+      console.log(data.comment);
+      $("#chat").append(data.comment);
+    });
+    function myOnClick() {
+      socket.emit("reqMsg", { comment: $("#user").val() });
+      $("#user").val("");
+    }
+  </script>
+</html>
