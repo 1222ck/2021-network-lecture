@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Socketio chat</title>
-    <script src="http://127.0.0.1/socket.io/socket.io.js"></script>
+    <script src="http://1222ck.securekim.com/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
@@ -14,7 +14,7 @@
     />
   </body>
   <script>
-    var socket = io.connect("http://127.0.0.1");
+    var socket = io.connect("http://1222ck.securekim.com");
     socket.emit("joinRoom", { roomName: "myroom" });
     socket.on("recMsg", function (data) {
       console.log(data.comment);
