@@ -1,0 +1,11 @@
+{
+    "bidFee" : 0.0005,
+    "askFee" : 0.0005,
+    "markets" : [
+        "KRW-BTC" ,"KRW-ETH","KRW-NEO","KRW-BCH","KRW-LTC"
+        ,"KRW-XRP","KRW-ETC","KRW-SNT","KRW-XEM","KRW-LSK"
+        ,"KRW-ADA","KRW-BTG","KRW-EOS","KRW-BTT","KRW-LOOM"
+        ,"KRW-QTUM","KRW-ATOM","KRW-DOGE","KRW-WAVES","KRW-STEEM"
+        ,"KRW-STORJ","KRW-THETA","KRW-TFUEL"
+        ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "upbitClient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.14",
+    "request": "^2.88.2",
+    "socketio": "^1.0.0",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.10"
+  }
+}
